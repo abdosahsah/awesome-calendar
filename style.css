@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calendar {
+    background-color: #313131;
+    width: 18.75rem;
+    height: 22.5rem;
+}
+
+#current-month {
+    height: 7.5rem;
+    width: 100%;
+    background-color: #346751;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#current-month h1 {
+    font-weight: 400;
+    padding-bottom: 0.4rem;
+}
+
+#current-month button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#weekdays {
+    height: 3.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weekdays div {
+    width: 2.678rem;
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+#days {
+    display: flex;
+    flex-wrap: wrap;
+    height: 9.5rem;
+}
+
+#days div {
+    width: 2.678rem;
+    height: 1.9rem;
+    padding-top: 0.375rem;
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+#days div:hover:not(.today) {
+    border: 1px solid #346751;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+    opacity: 0.5;
+}
+
+.today {
+    background-color: #346751;
+}
